@@ -45,7 +45,7 @@ for (i in 1:N){
   #### electron transport rate described by beta, alpha and kappa and s
   ### predicted PSII following expondential decay model
     PHI2[i]<-((alpha[geno[i]]-kappa[geno[i]]) * (exp(beta[geno[i]] * (Q[i]))))+kappa[geno[i]]
-    Jll[i]<- (PHI2[i]*s1[geno[i]]*Q[i])*2   # Jmax is gone thetaJ is gone
+    Jll[i]<- (PHI2[i]*s1[geno[i]]*Q[i])   # Jmax is gone thetaJ is gone
     
     # quadratic solution for net A if limited by light (RuBP regeneration) (Aj)
     a2[i]<-(-1.0/gm[i])
